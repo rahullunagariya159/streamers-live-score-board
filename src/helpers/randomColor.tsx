@@ -24,6 +24,6 @@ export function getNumberBackGroundColor(rank: number) {
   }
 }
 
-export function getRandomNumber(min: number = 1000, max: number = 1000000) {
+export function getRandomNumber(min: number = 1000, max: number = 9000) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }

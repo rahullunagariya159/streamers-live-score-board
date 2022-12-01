@@ -18,7 +18,7 @@ export const useStreamerSorting = () => {
           Object.assign(streamer, { score: getRandomNumber() })
         );
       });
-    }, 1000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

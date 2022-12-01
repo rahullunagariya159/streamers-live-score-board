@@ -5,6 +5,7 @@ import {
   getNumberBackGroundColor,
   getRankBackgroundColor,
 } from "../helpers/randomColor";
+import Count from "./Count";
 import { DefaultTypes } from "../types";
 
 interface ListItemProps {
@@ -15,7 +16,7 @@ interface ListItemProps {
 export const CampaignStreamersList = forwardRef(
   ({ items, index }: ListItemProps, ref) => {
     const rankTitleAvatarBackgroundColor = useMemo(
-      () => `#${Math.random().toString(16).substr(-6)}`,
+      () => `#${Math.random().toString(14).substr(-6)}`,
       []
     );
 
@@ -57,7 +58,14 @@ export const CampaignStreamersList = forwardRef(
           </ToolTip>
         </Avatar>
         <DisplayNameContainer>{items.displayName}</DisplayNameContainer>
-        <ScoreContainer>{`${items.score} pt`}</ScoreContainer>
+        <Count
+          key={items.userID}
+          data={{
+            id: items.userID,
+            number: items.score.toString(),
+            duration: "1",
+          }}
+        />
       </ListContainer>
     );
   }
@@ -136,15 +144,8 @@ const ListContainer = styled.div`
   }
 `;
 
-const ScoreContainer = styled.div`
-  justify-self: end;
-  font-weight: bold;
-  color: #dc3a79;
-  align-self: center;
-`;
-
 const DisplayNameContainer = styled.div`
-  justify-self: end;
+  justify-self: start;
   align-self: center;
   @media (max-width: 768px) {
     justify-self: center;
