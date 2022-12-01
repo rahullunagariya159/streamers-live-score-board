@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/streamers-live-score-board/static/css/main.073c9b0a.css",
-    "main.js": "/streamers-live-score-board/static/js/main.d6dafb99.js",
+    "main.js": "/streamers-live-score-board/static/js/main.b582c82a.js",
     "static/js/787.a3284078.chunk.js": "/streamers-live-score-board/static/js/787.a3284078.chunk.js",
     "index.html": "/streamers-live-score-board/index.html",
     "main.073c9b0a.css.map": "/streamers-live-score-board/static/css/main.073c9b0a.css.map",
-    "main.d6dafb99.js.map": "/streamers-live-score-board/static/js/main.d6dafb99.js.map",
+    "main.b582c82a.js.map": "/streamers-live-score-board/static/js/main.b582c82a.js.map",
     "787.a3284078.chunk.js.map": "/streamers-live-score-board/static/js/787.a3284078.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d6dafb99.js"
+    "static/js/main.b582c82a.js"
   ]
 }
